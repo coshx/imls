@@ -6,6 +6,7 @@ gem 'haml'
 gem 'heroku_san'
 gem 'factory_girl_rails', '>= 1.6.0'
 gem 'blacklight'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3'
@@ -26,9 +27,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails', '~> 1.0.0'
+  gem 'compass-susy-plugin', '~> 0.9.0'
 end
-
-gem "devise"
-
-gem "compass-rails", "~> 1.0.0", :group => :assets
-gem "compass-susy-plugin", "~> 0.9.0", :group => :assets
