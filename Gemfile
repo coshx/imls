@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 
 gem 'haml'
-gem 'devise', '>= 2.0.0'
 gem 'heroku_san'
 gem 'factory_girl_rails', '>= 1.6.0'
 gem 'blacklight'
@@ -28,3 +27,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+
+gem "devise"
+
+gem "compass-rails", "~> 1.0.0", :group => :assets
+gem "compass-susy-plugin", "~> 0.9.0", :group => :assets
