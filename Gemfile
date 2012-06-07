@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'factory_girl_rails', '>= 1.6.0'
 gem 'blacklight'
 gem 'devise'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3'
