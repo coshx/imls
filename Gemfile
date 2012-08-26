@@ -10,6 +10,8 @@ gem 'blacklight'
 gem 'devise'
 gem 'therubyracer'
 
+gem 'thin'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '>= 2.8.1'
