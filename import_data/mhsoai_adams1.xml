@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Used template that includes JRiley's revisions: deletion of rfc1807 definition and inclusion of pairs for all schemaLocation attributes.  Validates at http://tools.decisionsoft.com/schemaValidate/  -->
+<Repository xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/static-repository.xsd   http://www.openarchives.org/OAI/2.0/static-repository.xsd">
+  <Identify>
+    <oai:repositoryName>Massachusetts Historical Society's Selected Adams Digital Resources </oai:repositoryName>
+    <oai:baseURL>http://www.masshist.org/oai/static/mhsoai_adams1.xml</oai:baseURL>
+    <oai:protocolVersion>2.0</oai:protocolVersion>
+    <oai:adminEmail>nheywood@masshist.org</oai:adminEmail>
+    <oai:earliestDatestamp>2012-04-26</oai:earliestDatestamp>
+
+    <oai:deletedRecord>no</oai:deletedRecord>
+    <oai:granularity>YYYY-MM-DD</oai:granularity>
+  </Identify>
+  <ListMetadataFormats>
+    <oai:metadataFormat>
+      <oai:metadataPrefix>oai_dc</oai:metadataPrefix>
+      <oai:schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</oai:schema>
+
+      <oai:metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</oai:metadataNamespace>
+    </oai:metadataFormat>
+
+  </ListMetadataFormats>
+
+  <ListRecords metadataPrefix="oai_dc">
+
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa101</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <!-- add paired value for schemaLocation below: -->
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0001</dc:id>
+          <dc:title> John Adams, [portrait] </dc:title>
+          <dc:creator> Benjamin Blyth</dc:creator>
+          <dc:subject> Adams, John, 1735-1826 --Portraits </dc:subject>
+          <dc:subject> Men --Portraits.</dc:subject>
+          <dc:subject> Companion portraits --Adams </dc:subject>
+          <dc:subject> Portraits </dc:subject>
+          <dc:description> 1 painting : pastel on paper ; 57 x 44.5 cm. in frame 68 x 55.2 x 4.2 cm.  Head and shoulders view, turned slightly right. Full gray wig, narrow turned-down collar on shirt, white stock, dark gray waistcoat and coat, both with large buttons.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:date>circa 1766 </dc:date>
+          <dc:type>Image  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/database/40  </dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa102</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0007</dc:id> 
+          <dc:title>Declaration of Independence [manuscript copy], [1776]</dc:title>
+          <dc:creator> Draft copied by John Adams </dc:creator>
+          <dc:subject>United States.  </dc:subject>
+          <dc:subject>United States. Continental Congress  </dc:subject>
+          <dc:description>Draft of the Declaration of Independence, before 28 June 1776. Manuscript copy by John Adams. From the Adams Family Papers.</dc:description>
+          <dc:description>On 11 June 1776, Congress appointed a committee of five to draft a formal declaration of independence: Thomas Jefferson, John Adams, Benjamin Franklin, Roger Sherman, and Robert R. Livingston. In his Autobiography, Adams wrote that he and Jefferson were members of a subcommittee, and that he pressed the chore upon his younger colleague for a variety of political and personal reasons; Jefferson simply said that he was chosen by the committee as a whole to draft the document. Scholars now generally agree that Jefferson showed his draft first to Adams and then to Franklin before he presented it to the entire committee. On 2 July 1776, once the resolution on independence passed, Congress turned immediately to the Declaration itself and the committee of the whole considered its language.
+           At an early stage of the revisions, before it was even presented to the committee of five, Adams copied the entire document. The Adams copy is extremely important for demonstrating the evolution of the text from Jefferson's "original Rough draught," as he called it, which exists now only as a much marked-up document, to the Declaration so familiar today.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:date> 1776</dc:date>
+          <dc:type>Image  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>   http://www.masshist.org/database/6</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa103</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0004</dc:id>
+          <dc:title>Diplomatic medal of the States-General of the United Provinces of Holland given to John Adams </dc:title>
+          <dc:creator> unidentified creator  </dc:creator>
+          <dc:subject>United States --Foreign relations --1783-1815--Medals.  </dc:subject>
+          <dc:description>Gold medal presented to John Adams by the States of Holland on his taking leave as minister 6 March 1788.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date>1788 </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/82</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa104</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0043</dc:id> 
+          <dc:title> Diaries of John Adams</dc:title>
+          <dc:creator> John Adams  </dc:creator>
+          <dc:subject>Massachusetts--History--Revolution, 1775-1783--Personal narratives.  </dc:subject>
+          <dc:subject>United States--History--Revolution, 1775-1783--Causes </dc:subject>
+          <dc:subject>United States--Politics and government--1775-1783. </dc:subject>
+          <dc:subject>United States--Politics and government--1783-1809. </dc:subject>
+          <dc:subject>Family history--1750-1799. </dc:subject>
+          <dc:description>During much of his life, John Adams (1735-1826), kept a series of small manuscript volumes in which he described both daily activities and notable events in which he participated. Much of John Adams's life was spent in service to his country. He was a delegate to the Continental Congress, an officially appointed diplomat (who served as a commissioner in France, Great Britain, and the Netherlands, and as minister to the Court of St. James's), vice president and president of the United States.
+                        The 51 manuscript volumes compiled by John Adams date from 1753 to 1804 (with gaps) and consist of personal diary entries, financial accounts, copies of letters, drafts of essays, and notes on books and legal cases. The earliest diaries include John Adams's descriptions of student life at Harvard College, his experiences as a teacher in Worcester, Massachusetts, and accounts as a lawyer and a member of the circuit court system. Beginning in 1774, most of the manuscript volumes describe the events Adams witnessed as a Congressional delegate and diplomat in Europe through the summer of 1786. The last diary (diary 46), is actually a series of several loose sequences of pages, and this diary contains sporadic entries from August 1787 through 1804. John Adams wrote a few entries in this diary during his vice presidency (including descriptions of Congressional debates in 1789 and entries written during the summer of 1804 about his daily activities at his farm and home in Quincy, Massachusetts), but the latest diary does not contain any entries related to Adams's presidency.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> 1753-1804</dc:date>
+          <dc:type>Web page with links to digital presentations of manuscript volumes </dc:type>
+          <dc:format> image/jpeg  and transcriptions</dc:format>
+          <dc:identifier>http://www.masshist.org/digitaladams/aea/browse/diaries_by_number.html</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa105</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0054</dc:id>
+          <dc:title> Letter from John Adams to Abigail Adams, 3 July 1776, "Your Favour of June 17..."  </dc:title>
+          <dc:creator> John Adams </dc:creator>
+          <dc:subject>United States History Revolution, 1775-1783 </dc:subject>
+          <dc:subject>United States --Politics and government --1775-1783. </dc:subject>
+          <dc:subject>Letters </dc:subject>
+          <dc:subject> United States. Declaration of Independence.</dc:subject>
+          <dc:description>Letter from John Adams to Abigail Adams, 3 July 1776, "Your Favour of June 17...". 2 pages. Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description>
+          <dc:description>Philadelphia July 3. 1776
+            Your Favour of June 17 [Abigail to John, 17 June 1776] dated at Plymouth, was handed me, by yesterdays Post. I was much pleased to find that you had taken a journey to Plymouth, to see your Friends in the long Absence of one whom you may wish to see. The Excursion will be an Amusement, and will serve your Health. How happy would it have made me to have taken this journey with you?
+            
+            I was informed, a day or two before the Receipt of your Letter, that you was gone to Plymouth, by Mrs. Polly Palmer, who was obliging enough in your Absence, to inform me, of the Particulars of the Expedition to the lower Harbour against the Men of War. Her Narration is executed, with a Precision and Perspicuity, which would have become the Pen of an accomplished Historian.
+            
+            I am very glad you had so good an opportunity of seeing one of our little American Men of War. Many Ideas, new to you, must have presented themselves in such a Scene; and you will in future, better understand the Relations of Sea Engagements.
+            
+            I rejoice extreamly at Dr. Bulfinches Petition to open an Hospital. But I hope, the Business will be done upon a larger Scale. I hope, that one Hospital will be licensed in every County, if not in every Town. I am happy to find you resolved, to be with the Children, in the first Class. Mr. Whitney and Mrs. Katy Quincy, are cleverly through Innoculation, in this City.
+            
+            I have one favour to ask, and that is, that in your future Letters, you would acknowledge the Receipt of all those you may receive from me, and mention their Dates. By this Means I shall know if any of mine miscarry.
+            
+            The Information you give me of our Friends refusing his Appointment, has given me much Pain, Grief and Anxiety. I believe I shall be obliged to follow his Example. I have not Fortune enough to support my Family, and what is of more Importance, to support the Dignity of that exalted Station.
+            [Page 2] 
+            It is too high and lifted up, for me; who delight in nothing so much as Retreat, Solitude, Silence, and Obscurity. In private Life, no one has a Right to censure me for following my own Inclinations, in Retirement, Simplicity, and Frugality: in public Life, every Man has a Right to remark as he pleases, at least he thinks so.
+            Yesterday the greatest Question was decided, which ever was debated in America, and a greater perhaps, never was or will be decided among Men. A Resolution was passed without one dissenting Colony "that these united Colonies, are, and of right ought to be free and independent States, and as such, they have, and of Right ought to have full Power to make War, conclude Peace, establish Commerce, and to do all the other Acts and Things, which other States may rightfully do." You will see in a few days a Declaration setting forth the Causes, which have impell'd Us to this mighty Revolution, and the Reasons which will justify it, in the Sight of God and Man. A Plan of Confederation will be taken up in a few days.
+            
+            When I look back to the Year 1761, and recollect the Argument concerning Writs of Assistance, in the Superiour Court, which I have hitherto considered as the Commencement of the Controversy, between Great Britain and America, and run through the whole Period from that Time to this, and recollect the series of political Events, the Chain of Causes and Effects, I am surprized at the Suddenness, as well as Greatness of this Revolution. Britain has been fill'd with Folly, and America with Wisdom, at least this is my judgment. -- Time must determine. It is the Will of Heaven, that the two Countries should be sundered forever. It may be the Will of Heaven that America shall suffer Calamities still more wasting and Distresses yet more dreadfull. If this is to be the Case, it will have this good Effect, at least: it will inspire Us with many Virtues, which We have not, and correct many Errors, Follies, and Vices, which threaten to disturb, dishonour, and destroy Us. -- The Furnace of Affliction produces Refinement, in States as well as Individuals. And the new Governments we are assuming, in every Part, will require a Purification from our Vices, and an Augmentation of our Virtues or they will be no Blessings. The People will have unbounded Power. And the People are extreamly addicted to Corruption and Venality, as well as the Great. [The letterbook copy of this letter includes the following sentence:] [ I am not without Apprehensions from this Quarter.]-- But I must submit all my Hopes and Fears, to an overruling Providence, in which, unfashionable [ as] the Faith may be, I firmly believe.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Web presentation of images and transcription </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/digitaladams/aea/cfm/doc.cfm?id=L17760703ja</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa106</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0097</dc:id>
+          <dc:title>  Letter from John Adams to Abigail Adams, 3 July 1776, "Had a Declaration..." </dc:title>
+          <dc:creator> John Adams  </dc:creator>
+          <dc:subject>United States History Revolution, 1775-1783 </dc:subject>
+          <dc:subject>United States --Politics and government --1775-1783. </dc:subject>
+          <dc:subject>Letters </dc:subject>
+          <dc:subject> United States. Declaration of Independence.</dc:subject>
+          <dc:description> Letter from John Adams to Abigail Adams, 3 July 1776, "Had a Declaration..." . 3 pages. Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description>
+          <dc:description>Philadelphia July 3d. 1776
+            Had a Declaration of Independency been made seven Months ago, it would have been attended with many great and glorious Effects . . . . We might before this Hour, have formed Alliances with foreign States. -- We should have mastered Quebec and been in Possession of Canada .... You will perhaps wonder, how such a Declaration would have influenced our Affairs, in Canada, but if I could write with Freedom I could easily convince you, that it would, and explain to you the manner how. -- Many Gentlemen in high Stations and of great Influence have been duped, by the ministerial Bubble of Commissioners to treat .... And in real, sincere Expectation of this effort Event, which they so fondly wished, they have been slow and languid, in promoting Measures for the Reduction of that Province. Others there are in the Colonies who really wished that our Enterprise in Canada would be defeated, that the Colonies might be brought into Danger and Distress between two Fires, and be thus induced to submit. Others really wished to defeat the Expedition to Canada, lest the Conquest of it, should elevate the Minds of the People too much to hearken to those Terms of Reconciliation which they believed would be offered Us. These jarring Views, Wishes and Designs, occasioned an opposition to many salutary Measures, which were proposed for the Support of that Expedition, and caused Obstructions, Embarrassments and studied Delays, which have finally, lost Us the Province.
+            
+            
+            [Page 2] 
+            
+            All these Causes however in Conjunction would not have disappointed Us, if it had not been for a Misfortune, which could not be foreseen, and perhaps could not have been prevented, I mean the Prevalence of the small Pox among our Troops .... This fatal Pestilence compleated our Destruction. -- It is a Frown of Providence upon Us, which We ought to lay to heart.
+            
+            But on the other Hand, the Delay of this Declaration to this Time, has many great Advantages attending it. -- The Hopes of Reconciliation, which were fondly entertained by Multitudes of honest and well meaning tho weak and mistaken People, have been gradually and at last totally extinguished. -- Time has been given for the whole People, maturely to consider the great Question of Independence and to ripen their judgments, dissipate their Fears, and allure their Hopes, by discussing it in News Papers and Pamphletts, by debating it, in Assemblies, Conventions, Committees of Safety and Inspection, in Town and County Meetings, as well as in private Conversations, so that the whole People in every Colony of the 13, have now adopted it, as their own Act. -- This will cement the Union, and avoid those Heats and perhaps Convulsions which might have been occasioned, by such a Declaration Six Months ago.
+            
+            But the Day is past. The Second Day of July 1776, will be the most memorable Epocha, in the History of America.
+            [Page 3] 
+            
+            I am apt to believe that it will be celebrated, by succeeding Generations, as the great anniversary Festival. It ought to be commemorated, as the Day of Deliverance by solemn Acts of Devotion to God Almighty. It ought to be solemnized with Pomp and Parade, with Shews, Games, Sports, Guns, Bells, Bonfires and Illuminations from one End of this Continent to the other from this Time forward forever more.
+            You will think me transported with Enthusiasm but I am not. -- I am well aware of the Toil and Blood and Treasure, that it will cost Us to maintain this Declaration, and support and defend these States. -- Yet through all the Gloom I can see the Rays of ravishing Light and Glory. I can see that the End is more than worth all the Means. And that Posterity will tryumph in that Days Transaction, even altho We should rue it, which I trust in God We shall not.</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/digitaladams/aea/cfm/doc.cfm?id=L17760703jasecond</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa107</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0006</dc:id>
+          <dc:title> Letter from John Adams to Abigail Smith, 4 October 1762</dc:title>
+          <dc:creator>John Adams </dc:creator>
+          <dc:subject>  </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Letter from John Adams to Abigail Smith, 4 October 1762. 2 pages. Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description>
+          <dc:description>Miss Adorable
+            
+            By the same Token that the Bearer hereof satt up with you last night I hereby order you to give him, as many Kisses, and as many Hours of your Company after 9 O'Clock as he shall please to Demand and charge them to my Account: This Order, or Requisition call it which you will is in Consideration of a similar order Upon Aurelia for the like favour, and I presume I have good Right to draw upon you for the Kisses as I have given two or three Millions at least, when one has been received, and of Consequence the Account between us is immensely in favour of yours,
+            
+            John Adams
+            Octr. 4th. 1762</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/digitaladams/aea/cfm/doc.cfm?id=L17621004ja</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa108</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0010</dc:id>
+          <dc:title>  John Quincy Adams diary 23, 1 January 1795 - 12 May 1801, 5 August 1809 - 30 April 1836  </dc:title>
+          <dc:creator> John Quincy Adams </dc:creator>
+          <dc:subject>Diaries</dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>John Quincy Adams diary 23, 1 January 1795 - 12 May 1801, 5 August 1809 - 30 April 1836. 558 pages total (pages 1-42 are blank). Page dimensions: 22.4 cm. x 16.6 cm. (8-3/4 in. x 6-1/2 in.) Original manuscript from the Adams Family Papers, Massachusetts Historical Society</dc:description>
+          <dc:description>Diary volume 23 contains line-a-day entries for two spans of dates ranging from 1 January 1795 to 12 May 1801 and 5 August 1809 to 30 April 1836. It appears that John Quincy Adams compiled this volume beginning on 26 July 1816 when he was forty-nine years old (and the line-a-day entries written previous to that date were retrospectively created). This volume, containing single line entries for dates when John Quincy Adams was twenty-seven to thirty-three years old and forty-two to sixty-eight years old, is referred to as the "Epitome" volume.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Web displays of images of diary pages and assocaited dates. </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/jqadiaries/doc.cfm?id=jqad23_43</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa109</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0043</dc:id>
+          <dc:title>Letter from John Adams to Jeremy Belknap, 21 March 1795 </dc:title>
+          <dc:creator>John Adams  </dc:creator>
+          <dc:subject>Slavery --Massachusetts.</dc:subject>
+          <dc:subject>Antislavery movements --United States. </dc:subject>
+          <dc:description>John Adams responds to St. George Tucker's queries, circulated by Jeremy Belknap, about slavery and abolition in Massachusetts.  Adams claims to have very little knowledge or recollection of the specific events that led to abolition in Massachusetts, but does suggest that it was the "scoffs and insults" of "common" (i.e. labouring) white people that "filled the Negroes with discontent, made them lazy, idle, proud, vicious, and wholly useless," thus rendering abolition a "Measure of Economy" rather than a moral statement.  John Adams (1735-1826) was serving as Vice President of the United States in 1795, when he sent this letter to Belknap.</dc:description>
+          <dc:description>Quincy March 21, 1795
+            Dear Sir
+            
+            I received, last night, your favour of the 20th and a day or 
+            two before had recd that of the 2d, returned to me from 
+            Philadelphia. Thanks for Mr Winthrop's Prophecies.
+            
+            I wrote to Charles Thompson on the subject of 
+            Cook s Voyage, long enough before I left Philadelphia 
+            to have had an answer but none has yet arrived. 
+            Mr Thompson is as deeply engaged in Preparing an English 
+            Translation of the Septuagint as Mr Winthrop is in 
+            unriddling Prophecies, and possibly cannot find time to write 
+            upon such Trifles as Dr. Kippis's Sacrifice of the Honour of our 
+            Country to his Stupid adulation of Franklin. If I were to study 
+            Prophecies, I doubt not I should find the Worship of Latria 
+            paid by the Presbyterian Parsons in England to Franklin 
+            among some of the Traits or Features of Antichrist the Whore 
+            of Babylon. In their Imaginations, he always appeared to me, 
+            to have exalted himself above all that was worshipped. And this 
+            Circumstance among others contributed Somewhat to diminish my 
+            Reverence for Presbyterian Parsons.
+            
+            I have read the Queries concerning the Rise &amp; Progress of slavery 
+            but as it is a subject to which I have never given any very particular 
+            attention I may not be able to give you so much Information as 
+            many others.
+            [Page 2]
+            
+            I was concerned in several Causes, in which Negroes sued for their Freedom 
+            before the Revolution. The arguments in favour of their Liberty were much 
+            the same as have been urged Since in Pamphlets and Newspapers, in 
+            Debates in Parliament &amp;c. arising from the Rights of Mankind, which was 
+            the fashionable Word at that time. Since when that time they have dropped 
+            the "kind."
+            
+            3 Argument might have some Weight, in the Abolition of 
+            Slavery in the Massachusetts, but the real Cause was the multiplication of 
+            labouring White People, who, would no longer suffer the Rich to employ 
+            these Sable Rivals, so much to their Injury. This Principle has kept Negro 
+            Slavery out of France England and other Parts of Europe. The common 
+            People would not suffer, the Labour by which alone they could obtain 
+            a subsistence to be done by Slaves. If the Gentlemen had been permitted 
+            by Law to hold Slaves, the common white People would have put the Negroes 
+            to Death and their Masters too perhaps.
+            
+            5 I never knew a Jury, by a Verdict to determine a Negro to 
+            be a slave -- They always found them free. As I was not in the 
+            General Court in 1773 I have no particular Remembrance of the Petition 
+            for the Liberation of all the Blacks, and know not how it was supported 
+            or treated.
+            
+            The common white People, or rather the labouring People, were the 
+            cause of rendering Negroes unprofitable servants. Their Scoffs and Insults, their 
+            continual Insinuations, filled the Negroes with Discontent, made them lazy 
+            idle, proud, vicious, and at length wholly Useless to their Masters: to such 
+            a Degree that the Abolition of slavery became a Measure of Oeconomy.
+            
+            I am, at present in haste your Friend &amp;Sert
+            John Adams
+            [Subscription (recipient's name at foot of page)] Dr Belknap.
+     [Page 3]
+            [Endorsement]
+           Vice Presidt Adams</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>Web presentation with images and iink to transcription  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/586</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa110</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0028</dc:id>
+          <dc:title> John Quincy Adams diary 29, 1 August 1813 - 31 May 1816   </dc:title>
+          <dc:creator> John Quincy Adams  </dc:creator>
+          <dc:subject> Diaries </dc:subject>
+          <dc:subject> Diplomats --England. </dc:subject>
+          <dc:subject> Diplomats --Russia --Saint Petersburg. </dc:subject>
+          <dc:subject>Russia --Foreign relations --United States. </dc:subject>
+          <dc:subject>United States --Foreign relations --Russia.</dc:subject>
+          <dc:description>John Quincy Adams diary 29, 1 August 1813 - 31 May 1816. 456 pages total (2 unnumbered pages + 454 numbered pages). Page dimensions: 22.9 cm. x 17.9 cm. (9 in. x 7 in.). Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description>
+          <dc:description>Diary volume 29 contains long entries for dates ranging from 1 August 1813 to 31 May 1816. John Quincy Adams kept this diary volume when he was forty-six to forty-eight years old. During this time he serves as minister plenipotentiary to Russia, signs the Treaty of Ghent with Great Britain and serves as envoy extraordinary and minister plenipotentiary to Great Britain.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/jqadiaries/doc.cfm?id=jqad29_1</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa111</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0201</dc:id>
+          <dc:title>Williamsburg: Governor's Palace (plan), [1768]; or 1779-17, by Thomas Jefferson. N422; K95  </dc:title>
+          <dc:creator> Thomas Jefferson </dc:creator>
+          <dc:subject> Architecture --Designs and plans. </dc:subject>
+          <dc:subject> Architecture, Colonial --Virginia --Williamsburg. </dc:subject>
+          <dc:subject>Williamsburg, (Va). </dc:subject>
+          <dc:description>Measured plan of Governor's Palace, made by Thomas Jefferson to study changes.</dc:description>
+          <dc:description>Williamsburg: Governor's Palace (plan), 1 page, [1768]; or 1779-17. N422; K95. Dimensions: 24.1 cm x 19 cm (9-1/2" x 7-1/2"). Original manuscript from the Coolidge Collection of Thomas Jefferson Manuscripts, Massachusetts Historical Society.</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Image </dc:type>
+          <dc:format> image/jpeg </dc:format>
+            <dc:identifier>http://www.masshist.org/thomasjeffersonpapers/cfm/doc.cfm?id=arch_N422</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa112</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0302</dc:id>
+          <dc:title>  Williamsburg: Governor's Palace (study plan), 1779-1781, by Thomas Jefferson. N423; K96  </dc:title>
+          <dc:creator> Thomas Jefferson </dc:creator>
+          <dc:subject> Architecture --Designs and plans. </dc:subject>
+          <dc:subject> Architecture, Colonial --Virginia --Williamsburg. </dc:subject>
+          <dc:subject>Williamsburg, (Va). </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Study of plan for remodeling Governor's Palace.</dc:description>
+          <dc:description>Williamsburg: Governor's Palace (study plan), 1 page, (1 sheet includes N423 on one side, and N424 on the other side), 1779-1781. N423; K96. Dimensions: 18.6 cm x 30.6 cm (7-5/16" x 12-1/16"). Original manuscript from the Coolidge Collection of Thomas Jefferson Manuscripts, Massachusetts Historical Society.</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>Image  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/thomasjeffersonpapers/cfm/doc.cfm?id=arch_N423</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>   <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa113</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0540</dc:id> 
+          <dc:title>  Williamsburg: Governor's Palace (study plan), 1779-1781, by Thomas Jefferson. N424; K97  </dc:title>
+          <dc:creator> Thomas Jefferson </dc:creator>
+          <dc:subject> Architecture --Designs and plans. </dc:subject>
+          <dc:subject> Architecture, Colonial --Virginia --Williamsburg. </dc:subject>
+          <dc:subject>Williamsburg, (Va). </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Study of plan for remodeling Governor's Palace.</dc:description>
+          <dc:description>Williamsburg: Governor's Palace (study plan), 1 page, (1 sheet includes N423 on one side, and N424 on the other side), 1779-1781. N423; K96. Dimensions: 18.6 cm x 30.6 cm (7-5/16" x 12-1/16"). Original manuscript from the Coolidge Collection of Thomas Jefferson Manuscripts, Massachusetts Historical Society.</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  Image</dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/thomasjeffersonpapers/cfm/doc.cfm?id=arch_N424</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa114</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0219</dc:id>
+          <dc:title> Williamsburg: Governor's Palace (study plan), 1779-1781, by Thomas Jefferson. N425; K98  </dc:title>
+          <dc:creator> Thomas Jefferson  </dc:creator>
+          <dc:subject> Architecture --Designs and plans. </dc:subject>
+          <dc:subject> Architecture, Colonial --Virginia --Williamsburg. </dc:subject>
+          <dc:subject>Williamsburg, (Va). </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Williamsburg: Governor's Palace (study plan), 1 page, 1779-1781. N425; K98. Dimensions: 24.3 cm x 19.1 cm (9-9/16" x 7-1/2"). Original manuscript from the Coolidge Collection of Thomas Jefferson Manuscripts, Massachusetts Historical Society.</dc:description>
+          <dc:description> Study of plan for remodeling Governor's Palace with a temple-form roof and two pediments</dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/thomasjeffersonpapers/cfm/doc.cfm?id=arch_N425</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa115</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0119</dc:id>
+          <dc:title>Notes on the State of Virginia [manuscript], [1781-1785]  </dc:title>
+          <dc:creator> Thomas Jefferson  </dc:creator>
+          <dc:subject>Indians of North America --Virginia  </dc:subject>
+          <dc:subject>Indians of North America --History </dc:subject>
+          <dc:subject>Virginia --Description and travel </dc:subject>
+          <dc:subject>Virginia --History </dc:subject>
+          <dc:description>The Massachusetts Historical Society owns a remarkable document in Thomas Jefferson's own handwriting, the text of his only full-length book, Notes on the State of Virginia. When Jefferson was in Paris in 1785 representing the United States as a diplomat, he paid to have 200 copies of Notes printed for private distribution. Prior to publication, Jefferson reworked an earlier version of his manuscript by using sealing wax to attach corrections and changes written on small additional pieces of paper to full handwritten pages. He also expanded the text by inserting additional full pages. These changes show the evolution of Jefferson's ideas on a number of topics, and the supplemental information he gathered as he wrote. This website allows the reader to interact directly with Jefferson's complex manuscript by reading the original manuscript and by following all the changes that he made to the text before it was first published—including the opportunity to see passages written by Jefferson that have been hidden by attachments for more than two centuries.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Interactive website with page images </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/thomasjeffersonpapers/notes/</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa116</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0333</dc:id>
+          <dc:title> Thoughts on Government: Applicable to the Present State of the American Colonies   </dc:title>
+          <dc:creator>John Adams</dc:creator>
+          <dc:subject>Political science</dc:subject>
+          <dc:subject>United States --Politics and government --1775-1783 </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Pamphlet written by John Adams containing his ideas about establishing a government including three branches--legislative, executive, and judicial.  This pamphlet was printed by John Dunlap, Philadelophia, 1776.  </dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date>1776 </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/database/962</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa117</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0225</dc:id>
+          <dc:title>Letter from Francis Dana to John Adams, 28 August 1781 O.S. [8 September 1781 N.S. (New Style)] </dc:title>
+          <dc:creator> Francis Dana </dc:creator>
+          <dc:subject>United States Foreign relations 1775-1783  </dc:subject>
+          <dc:description>Francis Dana describes his experiences in St. Petersbur as he tries to establish diplomatic relations between the United States and Russia. In his letter to John Adams, Dana gives Adams news of his son, John Quincy Adams, who had accompanied Dana to Russia. While fourteen-year-old John Quincy Adams was too young to hold a formal diplomatic appointment, he acted as Dana's secretary and translator, as Dana was not fluent in French. Dana's letter to John Adams, written from St. Petersburg, is dated 28 August 1781, O.S. "O.S." ("Old Style") distinguishes the Julian calendar date--Russia did not adopt the Gregorian calendar until 1918--from the reformed ("New Style") Gregorian calendar date already in use in Western Europe and America, in this case, 8 September 1781.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Images and transcription </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/database/1701</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa118</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>0755</dc:id>
+          <dc:title> Letter from John Adams to John Quincy Adams, 10 November 1818 </dc:title>
+          <dc:creator>John Adams</dc:creator>
+          <dc:subject> </dc:subject><dc:description>Letter from John Adams to John Quincy Adams, 10 Nivember 1818. From the Adams Family Papers.</dc:description>
+          <dc:description>Quincy November 10th. 1818.
+            
+            My ever dear, ever affectionate, ever dutiful and deserving Son,
+            
+            The bitterness of Death is past. The grim Specter
+            so terrible to human Nature has no sting left for me.
+            
+            My consolations are more than I can number.
+            The Separation cannot be so long as twenty Seperations
+            heretofore. The Pangs and the Anguish have not been
+            so great as when you and I embarked for France 
+            in 1778.
+            
+            The sympathy and Benevolence of all the World, has been 
+            such as I shall not live long enough to describe.
+            I have not strength to do Justice to Individuals. Louisa Susan
+            Miss Harriet Welsh, have been with us constantly. The 
+            Three Families of Greanleafs, Mrs. John Greanleaf, has
+            been, (your Mother Said it to me, in her last moments
+            "a Mother to me"). Mr Daniel Greanleaf has been really
+            the good Samaritan.
+            
+            Louisa Harriet and Mrs John Greanleaf have been 
+            above all praise, Mr and Mrs Quincy have been more 
+            like Sons and Daughters than like Neighbours. Mr. Shaw
+            and your Sons have been all you could desire.
+            
+            Your letter of the Second is all and no more than all 
+            that I expected. Never was a more dutifull Son. Never a
+            more Affectionate Mother. Love to your Wife. May you never
+            experience her Loss.
+            
+            So prays your Aged and Afflicted
+            Father     John Adams
+            [Subscription (recipient's name or initials at foot of page)]
+            J. Q. A.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/database/1745</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa119</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>zxa120</dc:id>
+          <dc:title> Letter from John Adams to James Warren, 7 October 1775   </dc:title>
+          <dc:creator>John Adams </dc:creator>
+          <dc:subject>United States -- Foreign relations 1775-1783 </dc:subject>
+          <dc:subject>United States -- Commerce.</dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Letter from John Adams to James Warren, 7 October 1775. From the Warren-Adams Papers</dc:description>
+          <dc:description>John Adams writes to James Warren, president of the Massachusetts Provincial Congress, and shares his toughts on various matters facing the Continental Congress including trade issues and negotiations with foriegn powers.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type>  </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/database/816</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa120</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>zxa121</dc:id>
+          <dc:title>Letter from John Adams to Abigail Adams, 2 November 1800 </dc:title>
+          <dc:creator>John Adams </dc:creator>
+          <dc:subject>  </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Letter from John Adams to Abigail Adams, 2 November 1800. 3 pages. Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description>
+          <dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> Images and transcription </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier> http://www.masshist.org/digitaladams/aea/cfm/doc.cfm?id=L18001102ja</dc:identifier>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+    <oai:record>
+      <oai:header>
+        <oai:identifier>oai:an.oa.org:zxa121</oai:identifier>
+        <oai:datestamp>2012-04-30</oai:datestamp>
+      </oai:header>
+      <oai:metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:id>zxa122</dc:id> 
+          <dc:title>  Letter from Abigail Adams to John Adams, 31 March - 5 April 1776 </dc:title>
+          <dc:creator>Abigail Adams </dc:creator>
+          <dc:subject>  </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:subject> </dc:subject>
+          <dc:description>Letter from Abigail Adams to John Adams, 31 March - 5 April 1776. 4 pages. Original manuscript from the Adams Family Papers, Massachusetts Historical Society.</dc:description><dc:description>Abigail Adams wrote her most celebrated letter in the spring of 1776 to husband John, then attending the Continental Congress in Philadelphia. In this letter Abigail urges John to "Remember the ladies." John was in the midst of formulating his ideas about the types of governments to be organized in the former colonies. In Massachusetts, the British evacuation of Boston on 17 March 1776 freed American minds to contemplate their future, government, America's relations with foreign powers, slavery, and the status of women.</dc:description>
+          <dc:description>Abigail Adams wrote her most celebrated letter in the spring of 1776 to husband John, then attending the Continental Congress in Philadelphia. In this letter Abigail urges John to "Remember the ladies." John was in the midst of formulating his ideas about the types of governments to be organized in the former colonies. In Massachusetts, the British evacuation of Boston on 17 March freed American minds to contemplate their future, government, America's relations with foreign powers, slavery, and the status of women.
+          </dc:description><dc:description>Braintree March 31, 1776
+            I wish you would ever write me a Letter half as long as I write you; and tell me if you may where your Fleet are gone? What sort of Defence Virginia can make against our common Enemy? Whether it is so situated as to make an able Defence? Are not the Gentery Lords and the common people vassals, are they not like the uncivilized Natives Brittain represents us to be? I hope their Riffel Men who have shewen themselves very savage and even Blood thirsty; are not a specimen of the Generality of the people.
+            
+            I  [illegible]  am willing to allow the Colony great merrit for having produced a Washington but they have been shamefully duped by a Dunmore.
+            
+            I have sometimes been ready to think that the passion for Liberty cannot be Eaquelly Strong in the Breasts of those who have been accustomed to deprive their fellow Creatures of theirs. Of this I am certain that it is not founded upon that generous and christian principal of doing to others as we would that others should do unto us.
+            
+            Do not you want to see Boston; I am fearfull of the small pox, or I should have been in before this time. I got Mr. Crane to go to our House and see what state it was in. I find it has been occupied by one of the Doctors of a Regiment, very dirty, but no other damage has been done to it. The few things which were left in it are all gone. Cranch has the key which he never deliverd up. I have wrote to him for it and am determined to get it cleand as soon as possible and shut it up. I look upon it a new acquisition of property, a property which one month ago I did not value at a single Shilling, and could with pleasure have seen it in flames.
+            
+            The Town in General is left in a better state than we expected, more oweing to a percipitate flight than any Regard to the inhabitants, tho some individuals discoverd a sense of honour and justice and have left the rent of the Houses in which they were, for the owners and the furniture unhurt, or if damaged sufficent to make it good.
+            
+            Others have committed abominable Ravages. The Mansion House of your President is safe and the furniture unhurt whilst both 
+            [Page 2] 
+            the House and Furniture of the Solisiter General have fallen a prey to their own merciless party. Surely the very Fiends feel a Reverential awe for Virtue and patriotism, whilst they Detest the paricide and traitor.
+            I feel very differently at the approach of spring to what I did a month ago. We knew not then whether we could plant or sow with safety, whether when we had toild we could reap the fruits of our own industery, whether we could rest in our own Cottages, or whether we should not be driven from the sea coasts to seek shelter in the wilderness, but now we feel as if we might sit under our own vine and eat the good of the land.
+            
+            I feel a gaieti de Coar to which before I was a stranger. I think the Sun looks brighter, the Birds sing more melodiously, and Nature puts on a more chearfull countanance. We feel a temporary peace, and the poor fugitives are returning to their deserted habitations.
+            
+            Tho we felicitate ourselves, we sympathize with those who are trembling least the Lot of Boston should be theirs. But they cannot be in similar circumstances unless pusilanimity and cowardise should take possession of them. They have time and warning given them to see the Evil and shun it. -- I long to hear that you have declared an independency -- and by the way in the new Code of Laws which I suppose it will be necessary for you to make I desire you would Remember the Ladies, and be more generous and favourable to them than your ancestors. Do not put such unlimited power into the hands of the Husbands. Remember all Men would be tyrants if they could. If perticuliar care and attention is not paid to the Laidies we are determined to foment a Rebelion, and will not hold ourselves bound by any Laws in which we have no voice, or Representation.
+            
+            That your Sex are Naturally Tyrannical is a Truth so thoroughly established as to admit of no dispute, but such of you as wish to be happy willingly give up the harsh title of Master for the more tender and endearing one of Friend. Why then, not put it out of the power of the vicious and the 
+            [Page 3] 
+            
+            Lawless to use us with cruelty and indignity with impunity. Men of Sense in all Ages abhor those customs which treat us only as the vassals of your Sex. Regard us then as Beings placed by providence under your protection and in immitation of the Supreem Being make use of that power only for our happiness.
+            April 5
+            Not having an opportunity of sending this I shall add a few lines more; tho not with a heart so gay. I have been attending the sick chamber of our Neighbour Trot whose affliction I most sensibly feel but cannot discribe, striped of two lovely children in one week. Gorge the Eldest died on wedensday and Billy the youngest on fryday, with the Canker fever, a terible disorder so much like the throat distemper, that it differs but little from it. Betsy Cranch has been very bad, but upon the recovery. Becky Peck they do not expect will live out the day. Many grown persons are now sick with it, in this street 5. It rages much in other Towns. The Mumps too are very frequent. Isaac is now confined with it. Our own little flock are yet well. My Heart trembles with anxiety for them. God preserve them.
+            
+            I want to hear much oftener from you than I do. March 8 [John to Abigail, 08 March 1776] was the last date of any that I have yet had. -- You inquire of whether I am making Salt peter. I have not yet attempted it, but after Soap making believe I shall make the experiment. I find as much as I can do to manufacture cloathing for my family whowhich would else be Naked. I know of but one person in this part of the Town who has made any, that is Mr. Tertias Bass as he is calld who has got very near an hundred weight which has been found to be very good. I have heard of some others in the other parishes. Mr. Reed of Weymouth has been applied to, to go to Andover to the mills which are now at work, and has gone. I have lately seen a small Manuscrip describing the proportions for the various sorts of powder,such asfit for cannon, small arms and pistols  [illegible]  . If it would be of any Service your way I will get it transcribed and send it to you. -- Every one of your Friends send their Regards, and all the little ones. Your Brothers youngest child lies bad with convulsion fitts. Adieu. I need not say how much I am Your ever faithfull Friend.
+            
+            
+            [Page 4 ]
+            
+            
+            [Envelope -- see page image]
+          </dc:description><dc:publisher>Massachusetts Historical Society, www.masshist.org </dc:publisher>
+          <dc:contributor> </dc:contributor>
+          <dc:date> </dc:date>
+          <dc:type> images and transcription </dc:type>
+          <dc:format> image/jpeg </dc:format>
+          <dc:identifier>http://www.masshist.org/digitaladams/aea/cfm/doc.cfm?id=L17760331aa</dc:identifier>
+          <dc:identifier/>
+          <dc:identifier/>
+          <dc:source>  </dc:source>
+          <dc:language> </dc:language>
+          <dc:relation>  </dc:relation>
+          <dc:coverage> </dc:coverage>
+          <dc:rights>http://www.masshist.org/legal/rights.cfm</dc:rights>
+        </oai_dc:dc>
+      </oai:metadata>
+    </oai:record>
+  </ListRecords>
+</Repository>
