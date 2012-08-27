@@ -20,7 +20,7 @@ db/*.sqlite3
 /tmp
 
 # various artifacts
-**.war
+# **.war
 *.rbc
 *.sassc
 .rspec
