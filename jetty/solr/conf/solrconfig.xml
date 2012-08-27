@@ -1315,6 +1315,12 @@
        
      -->
 
+  <requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
+    <lst name="defaults">
+      <str name="config">data-config.xml</str>
+    </lst>
+  </requestHandler>
+
    <!-- Spell Check
 
         The spell check component can return a list of alternative spelling

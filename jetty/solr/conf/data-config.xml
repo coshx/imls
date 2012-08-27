@@ -1,0 +1,33 @@
+<dataConfig>
+  <dataSource type="FileDataSource" encoding="UTF8" />
+  <document>
+    <!-- TODO: the URL needs to be fixed so that it's not specific to a user -->
+    <entity name="record"
+            processor="XPathEntityProcessor"
+            stream="true"
+            forEach="/Repository/ListRecords/record"
+            url="/Users/ant/Source/imls-solr/data/masshist/mhsoai_adams1.xml">
+      <!-- this is fake right now, but necessary for blacklight
+           need to get the 'oai:identifer field in here, I think -->
+      <field column="id"              xpath="/Repository/ListRecords/record/metadata/dc/id" />
+
+      <!-- dublin core -->
+      <field column="title"           xpath="/Repository/ListRecords/record/metadata/dc/title" />
+      <field column="creator"         xpath="/Repository/ListRecords/record/metadata/dc/creator" />
+      <field column="subject"         xpath="/Repository/ListRecords/record/metadata/dc/subject" />
+      <field column="description"     xpath="/Repository/ListRecords/record/metadata/dc/description" />
+      <field column="publisher"       xpath="/Repository/ListRecords/record/metadata/dc/publisher" />
+      <field column="date"            xpath="/Repository/ListRecords/record/metadata/dc/date" />
+      <field column="type"            xpath="/Repository/ListRecords/record/metadata/dc/type" />
+      <field column="format"          xpath="/Repository/ListRecords/record/metadata/dc/format" />
+      <!-- identifier is a URL, and could be used to link to the resource
+           no way to verify the link though, so not really reliable -->
+      <field column="identifier"      xpath="/Repository/ListRecords/record/metadata/dc/identifier" />
+      <field column="source"          xpath="/Repository/ListRecords/record/metadata/dc/source" />
+      <field column="language"        xpath="/Repository/ListRecords/record/metadata/dc/language" />
+      <field column="relation"        xpath="/Repository/ListRecords/record/metadata/dc/relation" />
+      <field column="coverage"        xpath="/Repository/ListRecords/record/metadata/dc/coverage" />
+      <field column="rights"          xpath="/Repository/ListRecords/record/metadata/dc/rights" />
+    </entity>
+  </document>
+</dataConfig>

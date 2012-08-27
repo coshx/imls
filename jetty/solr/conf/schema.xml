@@ -222,9 +222,9 @@
 
     <!-- A general text field that has reasonable, generic
          cross-language defaults: it tokenizes with StandardTokenizer,
-	 removes stop words from case-insensitive "stopwords.txt"
-	 (empty by default), and down cases.  At query time only, it
-	 also applies synonyms. -->
+         removes stop words from case-insensitive "stopwords.txt"
+         (empty by default), and down cases.  At query time only, it
+         also applies synonyms. -->
     <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
@@ -514,8 +514,23 @@
        when adding a document.
    -->
 
+   <field name="title"       type="text_en"  indexed="true"  stored="true"   multiValued="false" />
+   <field name="creator"     type="text_en"  indexed="true"  stored="true"   multiValued="false" />
+   <field name="subject"     type="text_en"  indexed="true"  stored="true"   multiValued="true" />
+   <field name="description" type="text_en"  indexed="true"  stored="true"   multiValued="true" />
+   <field name="publisher"   type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="date"        type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="type"        type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="format"      type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="identifier"  type="string"   indexed="false" stored="true"   multiValued="false" />
+   <field name="source"      type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="language"    type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="relation"    type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="coverage"    type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="rights"      type="text"     indexed="true"  stored="false"  multiValued="false" />
+
    <!-- NOTE: this is not a full list of fields in the index; dynamic fields are also used -->
-   <field name="id" type="string" indexed="true" stored="true" required="true" />
+   <field name="id" type="string" indexed="true" stored="true" required="true"/>
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
    <!-- default, catch all search field -->
    <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
@@ -542,7 +557,7 @@
    <field name="pub_date_sort" type="tint" indexed="true" stored="true" multiValued="false"/>
      
    <!-- format is used for facet, display, and choosing which partial to use for the show view, so it must be stored and indexed -->
-   <field name="format" type="string" indexed="true" stored="true"/>
+   <!-- field name="format" type="string" indexed="true" stored="true"/ -->
 
    
 
