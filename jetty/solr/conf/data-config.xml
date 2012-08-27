@@ -6,7 +6,7 @@
             processor="XPathEntityProcessor"
             stream="true"
             forEach="/Repository/ListRecords/record"
-            url="../../../import_data/mhsoai_adams1.xml">
+            url="../import_data/mhsoai_adams1.xml">
       <!-- this is fake right now, but necessary for blacklight
            need to get the 'oai:identifer field in here, I think -->
       <field column="id"              xpath="/Repository/ListRecords/record/metadata/dc/id" />
