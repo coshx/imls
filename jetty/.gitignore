@@ -1,3 +1,4 @@
 solr/data/*
+solr/conf/dataimport.properties
 logs/*.log
 .DS_Store

@@ -576,7 +576,7 @@
        <str name="qf">
          title_unstem_search^100000
          subtitle_unstem_search^50000
-         title_t^25000
+         title^25000
          subtitle_t^10000
          title_addl_unstem_search^5000
          title_addl_t^2500
@@ -585,7 +585,7 @@
          subject_topic_unstem_search^1000
          subject_unstem_search^750
          subject_topic_facet^625
-         subject_t^500
+         subject^500
          author_unstem_search^250
          author_addl_unstem_search^250
          author_t^100
@@ -600,7 +600,7 @@
        <str name="pf">
          title_unstem_search^1000000
          subtitle_unstem_search^500000
-         title_t^250000
+         title^250000
          subtitle_t^100000
          title_addl_unstem_search^50000
          title_addl_t^25000
@@ -609,7 +609,7 @@
          subject_topic_unstem_search^10000
          subject_unstem_search^7500
          subject_topic_facet^6250
-         subject_t^5000
+         subject^5000
          author_unstem_search^2500
          author_addl_unstem_search^2500
          author_t^1000
@@ -636,7 +636,7 @@
          title_unstem_search^50000
          subtitle_unstem_search^25000
          title_addl_unstem_search^10000
-         title_t^5000
+         title^5000
          subtitle_t^2500
          title_addl_t^100
          title_added_entry_unstem_search^50
@@ -648,7 +648,7 @@
          title_unstem_search^500000
          subtitle_unstem_search^250000
          title_addl_unstem_search^100000
-         title_t^50000
+         title^50000
          subtitle_t^25000
          title_addl_t^1000
          title_added_entry_unstem_search^500
@@ -660,14 +660,14 @@
          subject_topic_unstem_search^200
          subject_unstem_search^125
          subject_topic_facet^100
-         subject_t^50
+         subject^50
          subject_addl_unstem_search^10
          subject_addl_t
        </str>
        <str name="subject_pf">
          subject_topic_unstem_search^2000
          subject_unstem_search^1250
-         subject_t^1000
+         subject^1000
          subject_topic_facet^500
          subject_addl_unstem_search^100
          subject_addl_t^10
@@ -822,7 +822,7 @@
         title_unstem_search^50000
         subtitle_unstem_search^25000
         title_addl_unstem_search^10000
-        title_t^5000
+        title^5000
         subtitle_t^2500
         title_addl_t^100
         title_added_entry_unstem_search^50
@@ -834,7 +834,7 @@
         title_unstem_search^500000
         subtitle_unstem_search^250000
         title_addl_unstem_search^100000
-        title_t^50000
+        title^50000
         subtitle_t^25000
         title_addl_t^1000
         title_added_entry_unstem_search^500
@@ -848,14 +848,14 @@
         subject_topic_unstem_search^200
         subject_unstem_search^125
         subject_topic_facet^100
-        subject_t^50
+        subject^50
         subject_addl_unstem_search^10
         subject_addl_t
       </str>
       <str name="pf_subject">
         subject_topic_unstem_search^2000
         subject_unstem_search^1250
-        subject_t^1000
+        subject^1000
         subject_topic_facet^500
         subject_addl_unstem_search^100
         subject_addl_t^10
