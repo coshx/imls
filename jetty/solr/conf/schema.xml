@@ -206,6 +206,16 @@
        </analyzer>
      </fieldType>
 
+    <fieldType name="text_facet" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" />
+        <filter class="solr.LengthFilterFactory" min="1" max="1024"/>
+      </analyzer>
+    </fieldType>
+
     <!-- One can also specify an existing Analyzer class that has a
          default constructor via the class attribute on the analyzer element
     <fieldType name="text_greek" class="solr.TextField">
@@ -572,7 +582,7 @@
    <dynamicField name="random_*" type="random" />
 
    <dynamicField name="*_display" type="string" indexed="false" stored="true" multiValued="true" />
-   <dynamicField name="*_facet" type="string" indexed="true" stored="false" multiValued="true" />
+   <dynamicField name="*_facet" type="text_facet" indexed="true" stored="false" multiValued="true" />
    <dynamicField name="*_sort" type="alphaOnlySort" indexed="true" stored="false" multiValued="false" />
    <dynamicField name="*_unstem_search" type="text_general" indexed="true" stored="false" multiValued="true" />
    <dynamicField name="*spell" type="textSpell" indexed="true" stored="false" multiValued="true" />
@@ -601,6 +611,11 @@
         or to add multiple fields to the same field for easier/faster searching.  -->
    <!-- Copy Fields -->
         
+   <!-- facet fields -->
+   <copyField source="format" dest="format_facet"/>
+   <copyField source="type" dest="type_facet"/>
+   <copyField source="date" dest="date_facet"/>
+
    <!-- unstemmed fields -->
    <copyField source="title" dest="title_unstem_search"/>
    <copyField source="subtitle_t" dest="subtitle_unstem_search"/>
@@ -609,7 +624,6 @@
    <copyField source="title_series_t" dest="title_series_unstem_search"/>
    <copyField source="subject" dest="subject_unstem_search"/>
    <copyField source="subject_addl_t" dest="subject_addl_unstem_search"/>
-   <copyField source="subject_topic_facet" dest="subject_topic_unstem_search"/>
 
    <!-- spellcheck fields -->
    <!-- default spell check;  should match fields for default request handler -->

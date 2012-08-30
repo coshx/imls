@@ -51,8 +51,10 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
-    config.add_facet_field 'format', :label => 'Format'
-    config.add_facet_field 'subject_topic_facet', :label => 'Topic', :limit => 20
+    config.add_facet_field 'type_facet', :label => 'Type'
+    config.add_facet_field 'format_facet', :label => 'Format'
+    config.add_facet_field 'date_facet', :label => 'Date'
+
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
