@@ -150,6 +150,29 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
+
+
+    # advanced search configuration
+    config.advanced_search = {
+      :form_solr_parameters => {
+        'facet.field' => %w[type_facet format_facet date_facet]
+      }
+    }
+
+    # fields available only from advanced search
+    config.add_search_field('description') do |field|
+      field.include_in_simple_select = false
+    end
+    config.add_search_field('publisher') do |field|
+      field.include_in_simple_select = false
+    end
+    config.add_search_field('source') do |field|
+      field.include_in_simple_select = false
+    end
+    config.add_search_field('relation') do |field|
+      field.include_in_simple_select = false
+    end
+
   end
 
 end
