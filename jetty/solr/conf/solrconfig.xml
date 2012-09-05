@@ -620,17 +620,13 @@
          title_series_t^100
          text^10
        </str>
-       <str name="author_qf">
-         author_unstem_search^200
-         author_addl_unstem_search^50
-         author_t^20
-         author_addl_t
+       <str name="creator_qf">
+         creator_unstem_search^100
+         creator
        </str>
-       <str name="author_pf">
-         author_unstem_search^2000
-         author_addl_unstem_search^500
-         author_t^200
-         author_addl_t^10
+       <str name="creator_pf">
+         creator_unstem_search^2000
+         creator^200
        </str>
        <str name="title_qf">
          title_unstem_search^50000
@@ -1138,9 +1134,9 @@
       <str name="buildOnOptimize">true</str>
     </lst>
     <lst name="spellchecker">
-      <str name="name">author</str>
-      <str name="field">author_spell</str>
-      <str name="spellcheckIndexDir">./spell_author</str>
+      <str name="name">creator</str>
+      <str name="field">creator_spell</str>
+      <str name="spellcheckIndexDir">./spell_creator</str>
       <str name="accuracy">0.7</str>
       <str name="buildOnOptimize">true</str>
     </lst>

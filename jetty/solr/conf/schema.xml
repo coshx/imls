@@ -624,6 +624,7 @@
    <copyField source="title_series_t" dest="title_series_unstem_search"/>
    <copyField source="subject" dest="subject_unstem_search"/>
    <copyField source="subject_addl_t" dest="subject_addl_unstem_search"/>
+   <copyField source="creator" dest="creator_unstem_search"/>
 
    <!-- spellcheck fields -->
    <!-- default spell check;  should match fields for default request handler -->
@@ -639,8 +640,7 @@
    <copyField source="title_added_entry_t" dest="title_spell"/>
    <copyField source="title_series_t" dest="title_spell"/>
    <!-- author spell check; should match fields for author request handler -->
-   <copyField source="author_t" dest="author_spell"/>
-   <copyField source="author_addl_t" dest="author_spell"/>
+   <copyField source="creator" dest="creator_spell"/>
    <!-- subject spell check; should match fields for subject request handler -->
    <copyField source="subject_topic_facet" dest="subject_spell"/>
    <copyField source="subject" dest="subject_spell"/>
