@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'factory_girl_rails', '>= 1.6.0'
 gem 'blacklight'
 gem 'blacklight_advanced_search'
+gem 'blacklight_highlight'
 gem 'devise'
 gem 'therubyracer'
 
