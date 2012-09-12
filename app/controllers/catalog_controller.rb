@@ -19,6 +19,7 @@ class CatalogController < ApplicationController
     config.index.record_display_type = 'format'
     config.add_index_field 'creator', :label => 'Creator:'
     config.add_index_field 'subject', :label => 'Subject:'
+    config.add_index_field 'date', :label => 'Date:'
 
 
     # solr field configuration for document/show views

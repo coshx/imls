@@ -529,7 +529,7 @@
    <field name="subject"     type="text_en"  indexed="true"  stored="true"   multiValued="true" />
    <field name="description" type="text_en"  indexed="true"  stored="true"   multiValued="true" />
    <field name="publisher"   type="text"     indexed="true"  stored="false"  multiValued="false" />
-   <field name="date"        type="text"     indexed="true"  stored="false"  multiValued="false" />
+   <field name="date"        type="text"     indexed="true"  stored="true"  multiValued="false" />
    <field name="type"        type="text"     indexed="true"  stored="false"  multiValued="false" />
    <field name="format"      type="text"     indexed="true"  stored="false"  multiValued="false" />
    <field name="identifier"  type="string"   indexed="false" stored="true"   multiValued="false" />
@@ -656,6 +656,8 @@
    <copyField source="subject" dest="opensearch_display"/>
    <copyField source="subject_addl_t" dest="opensearch_display"/>  
 
+   <copyField source="date" dest="date_sort"/>
+   <copyField source="title" dest="title_sort"/>
 
    <!-- Above, multiple source fields are copied to the [text] field. 
 	  Another way to map multiple source fields to the same 
