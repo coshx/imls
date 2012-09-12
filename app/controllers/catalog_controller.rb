@@ -70,7 +70,7 @@ class CatalogController < ApplicationController
 
     # "sort results by" select (pulldown)
     config.add_sort_field 'score desc, title_sort asc', :label => 'Relevance'
-    config.add_sort_field 'date_sort asc', :label => 'Date'
+    config.add_sort_field 'date_sort desc', :label => 'Date'
     config.add_sort_field 'title_sort asc', :label => 'Title'
 
     # If there are more than this many search results, no spelling ("did you

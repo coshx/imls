@@ -432,6 +432,14 @@
         />
       </analyzer>
     </fieldType>
+
+    <fieldType name="numericOnlySort" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+      <analyzer>
+        <tokenizer class="solr.KeywordTokenizerFactory"/>
+        <filter class="solr.TrimFilterFactory" />
+        <filter class="solr.PatternReplaceFilterFactory" pattern="([^0-9])" replacement="" replace="all"/>
+      </analyzer>
+    </fieldType>
     
     <fieldtype name="phonetic" stored="false" indexed="true" class="solr.TextField" >
       <analyzer>
@@ -542,6 +550,7 @@
    <!-- NOTE: this is not a full list of fields in the index; dynamic fields are also used -->
    <field name="id" type="string" indexed="true" stored="true" required="true"/>
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
+   <field name="date_sort" type="numericOnlySort" indexed="true" stored="false" multiValued="false"/>
    <!-- default, catch all search field -->
    <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
 
