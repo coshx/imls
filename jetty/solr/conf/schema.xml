@@ -216,6 +216,27 @@
       </analyzer>
     </fieldType>
 
+    <fieldType name="type_facet" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+      <analyzer>
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.EnglishMinimalStemFilterFactory"/>
+        <filter class="solr.StopFilterFactory" words="stopwords.txt" enablePositionIncrements="true" />
+        <filter class="solr.LengthFilterFactory" min="1" max="1024"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="type_synonyms.txt" expand="false"/>
+        <filter class="solr.KeepWordFilterFactory" words="types.txt"/>
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <fieldType name="date_facet" class="solr.TextField" sortMissingLast="true" omitNorms="true">
+      <analyzer>
+        <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+        <filter class="solr.PatternReplaceFilterFactory" pattern="([a-zA-Z])" replacement="" replace="all"/>
+        <filter class="solr.LengthFilterFactory" min="4" max="20"/>
+      </analyzer>
+    </fieldType>
+
     <!-- One can also specify an existing Analyzer class that has a
          default constructor via the class attribute on the analyzer element
     <fieldType name="text_greek" class="solr.TextField">
@@ -550,7 +571,12 @@
    <!-- NOTE: this is not a full list of fields in the index; dynamic fields are also used -->
    <field name="id" type="string" indexed="true" stored="true" required="true"/>
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
+
+   <!-- specific fields that override a more general dynamicField below -->
    <field name="date_sort" type="numericOnlySort" indexed="true" stored="false" multiValued="false"/>
+   <field name="type_facet" type="type_facet" indexed="true" stored="false" multiValued="true"/>
+   <field name="date_facet" type="date_facet" indexed="true" stored="false" multiValued="true"/>
+
    <!-- default, catch all search field -->
    <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
 
