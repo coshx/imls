@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IMLS Solr Import</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
+    <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Solr Import</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#contents">Contents</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h5>IMLS Solr Import</h5>
+      <p>This document will explain the steps to load data into the IMLS Solr index. Solr configuration is a complex topic and the details are outside the scope of this document. A list of references is included to help research any issues that may arise.</p>
+
+      <h5>Contents</h5>
+      <ul>
+        <li><a href="#create_xml">Create/manage XML file to be imported</a></li>
+        <li><a href="#update_link">Update link in data_import.xml (optional)</a></li>
+        <li><a href="#test_import">Test import locally (optional)</a></li>
+        <li><a href="#import_from_ui">Run Import from Solr Admin interface</a></li>
+        <li><a href="#update_from_cli">Run update from command line</a></li>
+        <li><a href="#upload">Upload XML file to the server</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+
+      <a id="create_xml"><h5>Create/Manage XML File to be Imported</h5></a>
+        <p>The current reference XML file was provided by the Massachusetts Historical Society and was used to create the configuration files for importing data into Solr. One important point to make is that we are currently inserting a field <code>&lt;dc:id&gt;0000&lt;/dc:id&gt;</code> which is not provided by the partner. This field is needed for the following reasons:
+          <ul>
+            <li>updates will not work without it (i.e. without this field, you'll have to drop and recreate the index every time)</li>
+            <li>being able to uniquely identify an object in the index is especially important when there are multiple partners, and therefore multiple collections represented</li>
+          </ul>
+        </p>
+
+        <p>The current XML file is made up of 21 records which represent objects in the Massachusetts Historical Society's archive.
+
+        <p>Example of a current working record:</p>
+
+        <pre class="highlight">
+          # from file: imls/import_data/mhsoai_adams1.xml
+          &lt;oai:record&gt;
+            &lt;oai:header&gt;
+              &lt;oai:identifier&gt;oai:an.oa.org:zxa101&lt;/oai:identifier&gt;
+              &lt;oai:datestamp&gt;2012-04-30&lt;/oai:datestamp&gt;
+            &lt;/oai:header&gt;
+            &lt;oai:metadata&gt;
+              &lt;oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.  1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2  .0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"&gt;
+                &lt;dc:id&gt;0001&lt;/dc:id&gt;
+                &lt;dc:title&gt; John Adams, [portrait] &lt;/dc:title&gt;
+                &lt;dc:creator&gt; Benjamin Blyth&lt;/dc:creator&gt;
+                &lt;dc:subject&gt; Adams, John, 1735-1826 --Portraits &lt;/dc:subject&gt;
+                &lt;dc:subject&gt; Men --Portraits.&lt;/dc:subject&gt;
+                &lt;dc:subject&gt; Companion portraits --Adams &lt;/dc:subject&gt;
+                &lt;dc:subject&gt; Portraits &lt;/dc:subject&gt;
+                &lt;dc:description&gt; 1 painting : pastel on paper ; 57 x 44.5 cm. in frame 68 x 55.2 x 4.2 cm.  Head and    shoulders   view, turned slightly right. Full gray wig, narrow turned-down collar on shirt, white stock,   dark   gray waistcoat   and coat, both with large buttons.&lt;/dc:description&gt;
+                &lt;dc:publisher&gt;Massachusetts Historical Society, www.masshist.org &lt;/dc:publisher&gt;
+                &lt;dc:date&gt;circa 1766 &lt;/dc:date&gt;
+                &lt;dc:type&gt;Image  &lt;/dc:type&gt;
+                &lt;dc:format&gt; image/jpeg &lt;/dc:format&gt;
+                &lt;dc:identifier&gt;http://www.masshist.org/database/40  &lt;/dc:identifier&gt;
+                &lt;dc:source&gt;  &lt;/dc:source&gt;
+                &lt;dc:language&gt; &lt;/dc:language&gt;
+                &lt;dc:relation&gt;  &lt;/dc:relation&gt;
+                &lt;dc:coverage&gt; &lt;/dc:coverage&gt;
+                &lt;dc:rights&gt;http://www.masshist.org/legal/rights.cfm&lt;/dc:rights&gt;
+              &lt;/oai_dc:dc&gt;
+            &lt;/oai:metadata&gt;
+          &lt;/oai:record&gt;
+        </pre>
+
+      <a id="update_link"><h5>Update Link in data_import.xml</h5></a>
+        <p>You'll need to open this file in the editor of your choice, and update the name of the XML file you wish to import. The key line here is <strong>url.</strong> This gives a pointer to the XML file from which data will be imported. <b>NB:</b> you can update this file name later in the Solr admin interface.</p>
+        <pre class="highlight">
+            # imls/jetty/solr/conf/data_import.xml
+            &lt;entity name="record"
+                    processor="XPathEntityProcessor"
+                    stream="true"
+                    forEach="/Repository/ListRecords/record"
+                    url="../import_data/mhsoai_adams1.xml"&gt;
+        </pre>
+
+      <a id="test_import"><h5>Test Import Locally</h5></a>
+        <p>To test the import locally, which should be done before moving the XML file out onto a production instance of Solr, it's necessary to drop the new or updated XML file in place. You can then manage the import, either from the Solr Admin interface, or from the command line.</p>
+
+        <p>The first step though is to copy the XML file you want to import into the <code>data_import</code> directory under the <code>imls</code> project directory.
+
+      <a id="update_from_ui"><h5>Importing From the Solr Admin Interface</h5></a>
+        <p>Once you have an XML file in place in the <code>data_import</code> directory, and the reference to it in <code>data_import.xml</code> is updated, you can navigate to the Data Import Handler tool in the Solr Admin interface to manage the import.</p>
+
+        <p>A good practice for working on the Solr index is to have a browser window open with three tabs: the IMLS Blacklight interface, the Solr Admin Schema Browser and the Data Import Handler interface.</p>
+
+        <ul>
+          <li><a href="http://localhost:3000/">IMLS Blacklight</a></li>
+          <li><a href="http://localhost:8983/solr/admin/schema.jsp">Schema Browser</a></li>
+          <li><a href="http://localhost:8983/solr/admin/dataimport.jsp?handler=/dataimport">Data Import Handler</a></li>
+        </ul>
+
+        <p>Assuming you are running the import locally first, the URL would be <code>http://localhost:8983/solr/admin/dataimport.jsp?handler=/dataimport</code>. The screen should look like this:</p>
+        
+        <p><img class="img-polaroid" src="img/dih_screenshot.png" /></p>
+
+        <p>In the left pane is the <code>data_import.xml</code> configuration file, along with controls for running the import. In the right pane is the XML formatted output of the commands.</p>
+
+        <p>You may make changes to the configuration (e.g. change the filename of the XML file to be imported) in this interface as necessary. Clicking on <code>Reload-config</code> will reload the original configuration from disk.</p>
+
+        <p>The other controls are as follows:</p>
+
+        <dl class="dl-horizontal">
+          <dt>Full import</dt>
+          <dd>Runs a full import of the XML file.</dd>
+          <dt>Delta-import</dt>
+          <dd>Runs a differential import and only updates records where changes are found.</dd>
+          <dt>Status</dt>
+          <dd>Shows the status of Solr. Helpful for long running tasks.</dd>
+          <dt>Reload-config</dt>
+          <dd>Reloads <code>data_import.xml</code> configuration from disk.</dd>
+          <dt>Abort</dt>
+          <dd>Cancels the current operation.</dd>
+          <dt>Documents Count</dt>
+          <dd>Should show the count of docuents in the index.</dd>
+          <dt>Full Import With Cleaning</dt>
+          <dd>Performs a full import after first deleting the entire index.</dd>
+        </dl>
+
+        <p>To perform the import, simply click on Full, Delta or Full Import With Cleaning. Any error messages from this operation may be observed in the terminal where you started Solr.</p>
+
+        <p>Once you've performed the import, it's a good idea to use the Schema Browser to inspect the index. With Solr running locally, the URL would be <code>http://localhost:8983/solr/admin/schema.jsp</code>. Clicking on <code>Fields</code> for instance will allow you to drill down into specific fields (e.g. "title") and see the types of data that have been imported into the index. One thing to note is that the data displayed will have been transformed by Solr and so the terms may not look like what you may expect (e.g. history will appear as histori).<p>
+
+      <a id="update_from_cli"><h5>Importing From the Command Line</h5></a>
+        <p>Importing from the CLI, as well as managing updates and clearing the index is easy.</p>
+
+      <a id="upload"><h5>Upload XML File to the Server</h5></a>
+        <p>Where to put the XML file on the server.</p>
+
+      <a id="references"><h5>References</h5></a>
+        <p>These references should help with any issues you may encounter with importing. The Solr Wiki is the primary reference for the DataImportHandler but it's worth noting that the documentation provided is written by developers and assumes an intimacy with Java, XML, Lucene and Solr.</p>
+        <ul>
+          <li><a href="http://www.solr.org/">Solr Main Site</a></li>
+          <li><a href="http://wiki.apache.org/solr/DataImportHandler">Solr Wiki</a></li>
+          <li><a href="en.wikipedia.org/w/index.php?title=Dublin_Core">Dublin Core on Wikipedia</a></li>
+        </ul>
+
+    </div>
+  </body>
+</html>

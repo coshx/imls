@@ -1,0 +1,16 @@
+@media print {
+    #navbar, #navbar-fixed-top
+    {
+      display: none;
+    }
+
+    #container
+    {
+      width: 100%; margin: 0; float: none;
+    }
+
+    a:link, a:visited
+    {
+      color: #781351
+    }
+}
