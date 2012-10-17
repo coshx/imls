@@ -7,6 +7,7 @@ set :application, "imls"
 set :repository,  "git@github.com:coshx/imls.git"
 set :branch, fetch(:branch, "master")
 set :deploy_to, "/opt/imls"
+set :use_sudo, false
 set :keep_releases, 3
 set :scm, :git
 set :user, :imls
@@ -18,11 +19,11 @@ ssh_options[:forward_agent] = true
 
 set :deploy_via, :remote_cache
 
-role :web, "your web-server here"
-role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+set :domain, "128.143.8.227"
 
+role :app, domain
+role :web, domain
+role :db, domain, :primary => true
 after "deploy:restart", "deploy:cleanup"
 
 namespace :deploy do
