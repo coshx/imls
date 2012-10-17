@@ -26,7 +26,7 @@ role :web, domain
 role :db, domain, :primary => true
 
 ## deployment tasks
-after 'deploy:update_code', 'deploy:symlink_db'
+before 'deploy:assets:precompile', 'deploy:symlink_db'
 
 namespace :deploy do
   desc "Symlinks production database.yml"
