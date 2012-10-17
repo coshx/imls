@@ -24,6 +24,17 @@ set :domain, "128.143.8.227"
 role :app, domain
 role :web, domain
 role :db, domain, :primary => true
+
+## deployment tasks
+after 'deploy:update_code', 'deploy:symlink_db'
+
+namespace :deploy do
+  desc "Symlinks production database.yml"
+  task :symlink_db, :roles => :app do
+    run "ln -nfs #{deploy_to}/shared/config/database.yml #{release_path}/config/database.yml"
+  end
+end
+
 after "deploy:restart", "deploy:cleanup"
 
 namespace :deploy do
