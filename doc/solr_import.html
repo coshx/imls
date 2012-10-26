@@ -46,7 +46,7 @@
       <h5>Contents</h5>
       <ul>
         <li><a href="#create_xml">Create/manage XML file to be imported</a></li>
-        <li><a href="#update_link">Update link in data_import.xml (optional)</a></li>
+        <li><a href="#update_link">Update link in data-config.xml (optional)</a></li>
         <li><a href="#test_import">Test import locally (optional)</a></li>
         <li><a href="#import_from_ui">Run Import from Solr Admin interface</a></li>
         <li><a href="#update_from_cli">Run update from command line</a></li>
@@ -98,10 +98,10 @@
           &lt;/oai:record&gt;
         </pre>
 
-      <a id="update_link"><h5>Update Link in data_import.xml</h5></a>
+      <a id="update_link"><h5>Update Link in data-config.xml</h5></a>
         <p>You'll need to open this file in the editor of your choice, and update the name of the XML file you wish to import. The key line here is <strong>url.</strong> This gives a pointer to the XML file from which data will be imported. <b>NB:</b> you can update this file name later in the Solr admin interface.</p>
         <pre class="highlight">
-            # imls/jetty/solr/conf/data_import.xml
+            # imls/jetty/solr/conf/data-config.xml
             &lt;entity name="record"
                     processor="XPathEntityProcessor"
                     stream="true"
@@ -115,7 +115,7 @@
         <p>The first step though is to copy the XML file you want to import into the <code>data_import</code> directory under the <code>imls</code> project directory.
 
       <a id="update_from_ui"><h5>Importing From the Solr Admin Interface</h5></a>
-        <p>Once you have an XML file in place in the <code>data_import</code> directory, and the reference to it in <code>data_import.xml</code> is updated, you can navigate to the Data Import Handler tool in the Solr Admin interface to manage the import.</p>
+        <p>Once you have an XML file in place in the <code>data_import</code> directory, and the reference to it in <code>data-config.xml</code> is updated, you can navigate to the Data Import Handler tool in the Solr Admin interface to manage the import.</p>
 
         <p>A good practice for working on the Solr index is to have a browser window open with three tabs: the IMLS Blacklight interface, the Solr Admin Schema Browser and the Data Import Handler interface.</p>
 
@@ -129,7 +129,7 @@
         
         <p><img class="img-polaroid" src="img/dih_screenshot.png" /></p>
 
-        <p>In the left pane is the <code>data_import.xml</code> configuration file, along with controls for running the import. In the right pane is the XML formatted output of the commands.</p>
+        <p>In the left pane is the <code>data-config.xml</code> configuration file, along with controls for running the import. In the right pane is the XML formatted output of the commands.</p>
 
         <p>You may make changes to the configuration (e.g. change the filename of the XML file to be imported) in this interface as necessary. Clicking on <code>Reload-config</code> will reload the original configuration from disk.</p>
 
@@ -143,7 +143,7 @@
           <dt>Status</dt>
           <dd>Shows the status of Solr. Helpful for long running tasks.</dd>
           <dt>Reload-config</dt>
-          <dd>Reloads <code>data_import.xml</code> configuration from disk.</dd>
+          <dd>Reloads <code>data-config.xml</code> configuration from disk.</dd>
           <dt>Abort</dt>
           <dd>Cancels the current operation.</dd>
           <dt>Documents Count</dt>
